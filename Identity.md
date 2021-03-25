@@ -14,7 +14,7 @@
 
 6. Integrate threat signals from other security solutions to improve detection, protection, and response.
 
-## Things to do in FTA
+## Things an FTA engineer can do to meet these objectives
 
 1. [Connect on prem Active Directory to Azure AD](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/identity/azure-ad).
 2. Choose an Authentication Option and make decisions to sync or not sync password hashes.
