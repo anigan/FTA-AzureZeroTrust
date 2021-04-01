@@ -1,5 +1,7 @@
 # Identity for Zero Trust Security in Azure
 
+Main Article - <https://docs.microsoft.com/en-us/security/zero-trust/identity>
+
 ## Objectives
 
 1. Cloud identity federates with on-premises identity systems.
@@ -14,9 +16,10 @@
 
 6. Integrate threat signals from other security solutions to improve detection, protection, and response.
 
-## Things an FTA engineer can do to meet these objectives
+## Things an FTA engineer can advise the customer to do
 
 1. [Connect on prem Active Directory to Azure AD](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/identity/azure-ad).
+
 2. Choose an Authentication Option and make decisions to sync or not sync password hashes.
 
 3. Only bring the identities you absolutely need and use this opportunity to leave stale and traditional service accounts behind.
