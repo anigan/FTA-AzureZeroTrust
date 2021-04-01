@@ -38,6 +38,6 @@ Infrastructure (whether on-premises servers, cloud-based VMs, containers, or mic
 6. __Networks__ -
 All data is ultimately accessed over network infrastructure. Networking controls can provide critical “in pipe” controls to enhance visibility and help prevent attackers from moving laterally across the network. Networks should be segmented (including deeper in-network micro segmentation) and real-time threat protection, end-to-end encryption, monitoring, and analytics should be employed.
 
-## Zero Trust security for Azure FTA
+## Zero Trust Security in Fast Track for Azure
 
 
