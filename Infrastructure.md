@@ -1,4 +1,4 @@
-# Infrastructure for Zero Trust Security in Azure
+# Zero Trust Security for Infrastructure in Azure
 
 ## Objectives
 
@@ -14,7 +14,7 @@
 
 6. User and resource access segmented for each workload.
 
-## Things that FTA can do
+## Things that an FTA engineer can advise the customer to do
 
 Implement Tenant Baselines - <https://docs.microsoft.com/en-us/security/zero-trust/infrastructure#infrastructure-zero-trust-deployment-guide>
 
@@ -28,7 +28,7 @@ Implement Tenant Baselines - <https://docs.microsoft.com/en-us/security/zero-tru
 
 5. Control sizing, regions and other settings through Azure policy.
 
-6. Enable JIT in Azure AD for user access and use identities otherwise.
+6. Enable JIT in Azure AD for priveleged access.
 
 7. Implement Azure Blueprints.
 
@@ -36,4 +36,10 @@ Implement Tenant Baselines - <https://docs.microsoft.com/en-us/security/zero-tru
 
 9. Apply network segmentation methodologies.
 
-10. Enable Azure Sentinel.
+10. Enable Azure Sentinel and monitor all azure services as well as VMs.
+
+11. Advise the customer to deploy Gen 2 virtual machines and enable [trusted launch](https://docs.microsoft.com/en-us/azure/virtual-machines/trusted-launch).
+
+12. Use Azure Key Vault's [Managed HSM](https://docs.microsoft.com/en-us/azure/key-vault/managed-hsm) or [Dedicated HSM](https://docs.microsoft.com/en-us/azure/dedicated-hsm) to generate  and store keys.
+
+
