@@ -1,4 +1,4 @@
-# Identity for Zero Trust Security in Azure
+# Zero Trust Security for Identities in Azure
 
 Main Article - <https://docs.microsoft.com/en-us/security/zero-trust/identity>
 
