@@ -1,0 +1,32 @@
+name: manage-azure-policy-4aaacfe7
+on:
+  workflow_dispatch:
+    inputs:
+      remarks:
+        description: 'Reason for triggering the workflow run'
+        required: false
+        default: 'Updating Azure Policies'
+
+
+## Uncomment the following if you wish to automatically trigger workflow run with every commit
+#
+#  push:
+#    paths:
+#      - 'initiatives/NIST_SP_800-171_Rev._2_03055927-78bd-4236-86c0-f36125a10dc9/**'
+#      - .github/workflows/manage-azure-policy-4aaacfe7.yml
+jobs:
+  apply-azure-policy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Login to Azure
+      uses: azure/login@v1
+      with:
+        creds: ${{secrets.AZURE_CREDENTIALS_4aaacfe7}}
+        allow-no-subscriptions: true
+    - name: Create or Update Azure Policies
+      uses: azure/manage-azure-policy@v0
+      with:
+        paths: |
+          initiatives/NIST_SP_800-171_Rev._2_03055927-78bd-4236-86c0-f36125a10dc9/**
